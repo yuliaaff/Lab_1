@@ -24,6 +24,6 @@ jobs:
         kubectl apply -f k8s-node-app.yaml
     - name: Test service URLs
       run: |
-        sleep 5 
+        sleep 10
         minikube service list
         minikube service nodejs-app --url
